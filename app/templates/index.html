@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Community Events Board</title>
+    </head>
+    <body>
+      <h1>Community Events Board</h1>
+      <div class="event-list">
+        <ol>
+          {% for event in events %}
+            <li>{{ event.name }} - {{ event.date }} - {{ event.type }}</li>
+          {% endfor %}
+          <!-- for each item in the database, take the values and display in the given order -->
+        </ol>
+      </div>
+      <a href = "/input"><h3>Add own event </h3></a>
+      <!-- link that leads back to inputting info. -->
+    </body>
+</html>
